@@ -103,12 +103,12 @@ footer .logo {
 }
 
 footer nav {
-  margin-top: 1rem;
+  margin-top: 0;
 }
 
 footer nav ul li {
   display: inline;
-  margin-left: 1rem;
+  margin-left: 0;
 }
 
 footer nav ul li a {
@@ -121,21 +121,30 @@ footer nav ul li a:hover {
   font-weight: bolder;
 }
 
+section,
+h1 {
+  color: hsl(215, 77%, 14%);
+  font-weight: bolder;
+  text-underline-position: below;
+  text-decoration: underline;
+
+}
+
 .twitchLogo {
   display: flex;
-  height: 30px;
+  height: 50px;
   float: left;
 }
 
 .twitterLogo {
   display: flex;
-  height: 30px;
+  height: 50px;
   float: left;
 }
 
 .facebookLogo {
   display: flex;
-  height: 30px;
+  height: 50px;
   float: left;
 }
 
