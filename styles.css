@@ -95,10 +95,12 @@ footer {
   padding: 1rem;
   text-align: center;
 }
+
 footer .logo {
   height: 50px;
   margin-right: 20px;
 }
+
 footer nav {
   margin-top: 1rem;
 }
@@ -117,8 +119,27 @@ footer nav ul li a:hover {
   color: #ccc;
 }
 
+.twitchLogo {
+  display: flex;
+  height: 30px;
+  float: left;
+}
+
+.twitterLogo {
+  display: flex;
+  height: 30px;
+  float: left;
+}
+
+.facebookLogo {
+  display: flex;
+  height: 30px;
+  float: left;
+}
+
 /* Media query for smaller screens */
-@media (max-width: 768px) nav, header {
+@media (max-width: 768px) nav,
+header {
   flex-direction: column;
 }
 
