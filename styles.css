@@ -9,8 +9,8 @@ body {
 }
 
 header nav ul li a:hover {
-  color: hsl(0, 0%, 30%);
-  font-weight: bolder;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(215, 77%, 14%);
 }
 
 h1 {
@@ -122,11 +122,12 @@ footer nav ul li {
 footer nav ul li a {
   color: hsl(215, 77%, 14%);
   text-decoration: none;
+  padding: 1em;
 }
 
 footer nav ul li a:hover {
-  color: hsl(0, 0%, 30%);
-  font-weight: bolder;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(215, 77%, 14%);
 }
 
 .twitchLogo {
