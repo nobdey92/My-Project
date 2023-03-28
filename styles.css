@@ -136,7 +136,7 @@ footer nav ul li a:hover {
 
 .twitterLogo {
   display: flex;
-  height: 50px;
+  height: 40px;
   float: left;
 }
 
@@ -147,23 +147,26 @@ footer nav ul li a:hover {
 }
 
 /* Media query for smaller screens */
-@media (max-width: 768px) nav,
-header {
-  flex-direction: column;
-}
+@media (max-width: 768px) {
 
-nav,
-footer {
-  flex-direction: column;
-}
+  nav,
+  header {
+    flex-direction: column;
+  }
 
-nav,
-ul {
-  text-align: center;
-}
+  nav,
+  footer {
+    flex-direction: column;
+  }
 
-nav,
-ul,
-li {
-  margin-top: 1rem;
+  nav,
+  ul {
+    text-align: center;
+  }
+
+  nav,
+  ul,
+  li {
+    margin-top: 1rem;
+  }
 }
