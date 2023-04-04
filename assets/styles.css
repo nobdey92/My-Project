@@ -1,5 +1,5 @@
 :root {
-  font-size: 20px;
+  font-size: 24px;
 
   --bgColor: hsl(0, 0%, 30%);
   --onBgColor: hsl(0, 0%, 100%);
@@ -25,20 +25,24 @@
 
 body {
   background-color: var(--bgColor);
-  color: var(--onBg);
+  color: var(--onBgColor);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
 }
 
-header nav {
-  background-color: var(--navColor);
-  color: var(--otherColor);
+header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding: var(--sizeSm);
+  background-color: var(--navColor);
+  color: var(--otherColor);
+}
+
+header img {
+  max-height: 50px;
 }
 
 header nav ul li a:hover {
@@ -46,155 +50,26 @@ header nav ul li a:hover {
   color: var(--onBgColor);
 }
 
-/* older code */
-
-h1 {
-  color: hsl(215, 77%, 14%);
-  font-weight: bolder;
-  text-underline-position: below;
-  text-decoration: underline;
-}
-
-h2 {
-  text-align: center;
-  text-underline-position: below;
-  text-decoration: underline;
-  color: hsl(215, 77%, 14%);
-  font-weight: bolder;
-}
-
-h3 {
-  text-underline-position: below;
-  text-decoration: underline;
-  color: hsl(215, 77%, 14%);
-  font-weight: bolder;
-}
-
 p {
-  text-align: justify;
-  color: hsl(0, 0%, 100%);
+  text-align: center;
+  padding: var(var(--sizeMd));
 }
 
-nav .logo {
-  height: 50px;
-  margin-right: 20px;
+main img {
+  max-height: 500px;
+  display: flex;
   align-items: center;
 }
 
-section .logo {
-  display: flex;
-  height: 300px;
-  float: right;
-}
-
-nav h1 {
-  margin: 0;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin-left: 1rem;
-}
-
-nav ul li a {
-  color: hsl(215, 77%, 14%);
-  text-decoration: none;
-}
-
-nav ul li a:hover {
-  color: hsl(215, 77%, 14%);
-}
-
-main {
-  padding: 2rem;
-}
-
-section {
-  margin-bottom: 2rem;
-}
-
-section h2 {
-  margin-bottom: 1rem;
-}
-
 footer {
-  background-color: hsl(44, 99%, 59%);
-  color: hsl(215, 77%, 14%);
-  padding: 0.1rem;
-  text-align: center;
-  justify-content: space-evenly;
-}
-
-footer .logo {
-  height: 50px;
-  margin-right: 20px;
-}
-
-footer nav {
-  margin-top: 0;
-}
-
-footer nav ul li {
-  display: inline;
-  margin-left: 0;
-}
-
-footer nav ul li a {
-  color: hsl(215, 77%, 14%);
-  text-decoration: none;
-  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  padding: var(--sizeSm);
+  background-color: var(--navColor);
+  color: var(--otherColor);
 }
 
 footer nav ul li a:hover {
-  color: hsl(0, 0%, 100%);
-  background-color: hsl(215, 77%, 14%);
-}
-
-.twitchLogo {
-  display: flex;
-  height: 50px;
-  float: left;
-}
-
-.twitterLogo {
-  display: flex;
-  height: 40px;
-  float: left;
-}
-
-.facebookLogo {
-  display: flex;
-  height: 50px;
-  float: left;
-}
-
-/* Media query for smaller screens */
-@media (max-width: 600px) {
-
-  nav,
-  header {
-    flex-direction: column;
-  }
-
-  nav,
-  footer {
-    flex-direction: column;
-  }
-
-  nav,
-  ul {
-    text-align: center;
-  }
-
-  nav,
-  ul,
-  li {
-    margin-top: 1rem;
-  }
+  background-color: var(--otherColor);
+  color: var(--onBgColor);
 }
