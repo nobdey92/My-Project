@@ -6,8 +6,7 @@
   --navColor: hsl(44, 99%, 59%);
   --otherColor: hsl(215, 77%, 14%);
 
-  --sizeXs: 1rem;
-  --sizeSm: calc(var(--sizeXs) * 1.5);
+  --sizeSm: 1rem;
   --sizeMd: calc(var(--sizeSm) * 1.5);
   --sizeLg: calc(var(--sizeMd) * 1.5);
   --sizeXl: calc(var(--sizeLg) * 1.5);
@@ -56,7 +55,7 @@ p {
 }
 
 main img {
-  max-height: 500px;
+  max-height: 300px;
   display: flex;
   align-items: center;
 }
@@ -67,6 +66,10 @@ footer {
   padding: var(--sizeSm);
   background-color: var(--navColor);
   color: var(--otherColor);
+}
+
+footer img {
+  max-height: 50px;
 }
 
 footer nav ul li a:hover {
