@@ -18,8 +18,7 @@
   padding: 0;
   border: none;
   background: none;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
@@ -28,20 +27,19 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  width: 100vmax;
 }
 
 header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  padding: var(--sizeSm);
   background-color: var(--navColor);
   color: var(--otherColor);
 }
 
 header img {
-  max-height: 50px;
+  max-height: 250px;
 }
 
 header nav ul li a:hover {
@@ -49,9 +47,22 @@ header nav ul li a:hover {
   color: var(--onBgColor);
 }
 
+h1 {
+  display: flex;
+  flex-direction: column;
+}
+
 p {
   text-align: center;
   padding: var(var(--sizeMd));
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  text-decoration: underline;
+  color: var(--otherColor);
 }
 
 main img {
@@ -62,14 +73,14 @@ main img {
 
 footer {
   display: flex;
-  flex-direction: column;
-  padding: var(--sizeSm);
+  flex-direction: row;
+  align-items: center;
   background-color: var(--navColor);
   color: var(--otherColor);
 }
 
-Foot img {
-  max-height: 50px;
+Footer img {
+  max-height: 250px;
 }
 
 footer nav ul li a:hover {
