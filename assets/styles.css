@@ -18,6 +18,7 @@
   padding: 0;
   border: none;
   background: none;
+  overflow-x: hidden;
 }
 
 body {
@@ -32,22 +33,40 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#wholeHeader {
+  width: 100%;
+}
+
 header {
-  background-color: var(--navColor);
-  color: var(--otherColor);
+  display: flex;
+  flex-direction: row;
   margin: 0;
   padding: 0;
+  background-color: var(--navColor);
+  color: var(--otherColor);
 }
 
 .logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  min-height: var(--sizeXl);
 }
 
-header h1 {
+#title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   text-align: center;
+}
+
+header div h1 {
+  font-size: var(--sizeLg);
+  text-decoration: underline;
+}
+
+nav {
+  display: block;
 }
 
 header nav ul {
@@ -59,10 +78,27 @@ header nav ul {
 header nav ul li a {
   color: var(--otherColor);
   text-decoration: none;
-  padding: var(--sizeSm);
 }
 
 header nav ul li a:hover {
   background-color: var(--otherColor);
   color: var(--onBgColor);
+}
+
+h2 {
+  text-align: center;
+  font-size: var(--sizeMd);
+  text-decoration: underline;
+}
+
+h3 {
+  text-align: left;
+  font-size: var(--sizeSm);
+  text-decoration: underline;
+  padding: var(--sizeSm);
+}
+
+p {
+  text-align: justify;
+  padding: var(--sizeSm);
 }
