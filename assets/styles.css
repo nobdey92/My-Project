@@ -6,7 +6,8 @@
   --navColor: hsl(44, 99%, 59%);
   --otherColor: hsl(215, 77%, 14%);
 
-  --sizeSm: 1rem;
+  --sizeXs: 1rem;
+  --sizeSm: calc(var(--sizeXs) * 1.5);
   --sizeMd: calc(var(--sizeSm) * 1.5);
   --sizeLg: calc(var(--sizeMd) * 1.5);
   --sizeXl: calc(var(--sizeLg) * 1.5);
@@ -47,10 +48,8 @@ header {
 }
 
 .logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-height: var(--sizeXl);
+  width: 100%;
+  height: auto;
 }
 
 header div h1 {
@@ -58,8 +57,10 @@ header div h1 {
   flex-wrap: wrap;
   text-decoration: underline;
   justify-content: center;
-  font-size: var(--sizeLg);
-  padding: var(--sizeSm);
+  text-align: center;
+  font-size: var(--sizeMd);
+  padding: var(--sizeXs);
+  color: var(--otherColor);
 }
 
 nav {
@@ -68,6 +69,8 @@ nav {
 
 header nav ul {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   list-style-type: none;
 }
@@ -80,6 +83,7 @@ header nav ul li a {
 header nav ul li a:hover {
   background-color: var(--otherColor);
   color: var(--onBgColor);
+  border-radius: var(--sizeXs);
 }
 
 h2 {
@@ -99,12 +103,16 @@ h3 {
 
 p {
   text-align: justify;
-  padding: var(--sizeSm);
+  padding-left: var(--sizeXs);
+  padding-right: var(--sizeXs);
+  padding-bottom: var(--sizeXs);
 }
 
 #wholeFooter {
   width: 100%;
 }
+
+/* Footer */
 
 footer {
   display: flex;
@@ -120,12 +128,16 @@ footer div h1 {
   flex-wrap: wrap;
   text-decoration: underline;
   justify-content: center;
-  font-size: var(--sizeLg);
-  padding: var(--sizeSm);
+  text-align: center;
+  font-size: var(--sizeMd);
+  padding: var(--sizeXs);
+  color: var(--otherColor);
 }
 
 footer nav ul {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   list-style-type: none;
 }
@@ -138,4 +150,26 @@ footer nav ul li a {
 footer nav ul li a:hover {
   background-color: var(--otherColor);
   color: var(--onBgColor);
+  border-radius: var(--sizeXs);
+}
+
+/* For Desktop */
+
+@media screen and (min-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: row;
+  }
+
+  header {
+    min-width: 100px;
+  }
+
+  header div h1 {
+    display: none;
+  }
+
+  footer {
+    display: none;
+  }
 }
