@@ -50,19 +50,16 @@ header {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  min-height: var(--sizeXl);
-}
-
-#title {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-align: center;
+  max-height: var(--sizeXl);
 }
 
 header div h1 {
-  font-size: var(--sizeLg);
+  display: flex;
+  flex-wrap: wrap;
   text-decoration: underline;
+  justify-content: center;
+  font-size: var(--sizeLg);
+  padding: var(--sizeSm);
 }
 
 nav {
@@ -87,18 +84,58 @@ header nav ul li a:hover {
 
 h2 {
   text-align: center;
-  font-size: var(--sizeMd);
   text-decoration: underline;
+  font-size: var(--sizeMd);
+  color: var(--otherColor);
 }
 
 h3 {
   text-align: left;
-  font-size: var(--sizeSm);
   text-decoration: underline;
+  font-size: var(--sizeSm);
   padding: var(--sizeSm);
+  color: var(--otherColor);
 }
 
 p {
   text-align: justify;
   padding: var(--sizeSm);
+}
+
+#wholeFooter {
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  background-color: var(--navColor);
+  color: var(--otherColor);
+}
+
+footer div h1 {
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: underline;
+  justify-content: center;
+  font-size: var(--sizeLg);
+  padding: var(--sizeSm);
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+footer nav ul li a {
+  color: var(--otherColor);
+  text-decoration: none;
+}
+
+footer nav ul li a:hover {
+  background-color: var(--otherColor);
+  color: var(--onBgColor);
 }
