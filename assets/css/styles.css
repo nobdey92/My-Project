@@ -32,10 +32,7 @@ body {
   color: var(--onBgColor);
   background-color: var(--bgColor);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-#wholeHeader {
-  width: 100%;
+  text-align: center;
 }
 
 header {
@@ -58,32 +55,70 @@ header div h1 {
   text-decoration: underline;
   justify-content: center;
   text-align: center;
-  font-size: var(--sizeMd);
+  font-size: var(--sizeSm);
   padding: var(--sizeXs);
   color: var(--otherColor);
 }
 
-nav {
+/* Dropdown button */
+.buttonDrop {
+  background-color: var(--bgColor);
+  color: var(--onBgColor);
+  padding: var(--sizeSm);
+  font-size: var(--sizeSm);
+  border: var(--sizeSm);
+  cursor: pointer;
+  border-radius: var(--sizeXs);
+}
+
+/* Dropdown button on hover & focus */
+.buttonDrop:hover,
+.buttonDrop:focus {
+  background-color: var(--otherColor);
+}
+
+/* The container <div> for button */
+.dropdown {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropMenuItems {
+  display: none;
+  position: absolute;
+  background-color: var(--bgColor);
+  min-width: var(--sizeXs);
+  z-index: 1;
+  border-radius: var(--sizeXs);
+}
+
+/* Links inside the dropdown */
+.dropMenuItems a {
+  color: var(--onBgColor);
+  padding: var(--sizeSm);
+  text-decoration: underline;
   display: block;
 }
 
-header nav ul {
+.dropMenuItems a:hover {
+  background-color: var(--navColor);
+  color: var(--otherColor);
+  border-radius: var(--sizeXs);
+}
+
+/* Show the dropdown menu */
+.show {
+  display: block;
+}
+
+/* list in header button */
+header ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  list-style-type: none;
-}
-
-header nav ul li a {
-  color: var(--otherColor);
-  text-decoration: none;
-}
-
-header nav ul li a:hover {
-  background-color: var(--otherColor);
-  color: var(--onBgColor);
-  border-radius: var(--sizeXs);
+  justify-content: space-around;
+  font-size: var(--sizeXs);
 }
 
 h2 {
@@ -106,10 +141,6 @@ p {
   padding-left: var(--sizeXs);
   padding-right: var(--sizeXs);
   padding-bottom: var(--sizeXs);
-}
-
-#wholeFooter {
-  width: 100%;
 }
 
 /* Footer */
@@ -155,7 +186,7 @@ footer nav ul li a:hover {
 
 /* For Desktop */
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 601px) {
   body {
     display: flex;
     flex-direction: row;
@@ -163,6 +194,11 @@ footer nav ul li a:hover {
 
   header {
     min-width: 100px;
+  }
+
+  header ul {
+    display: flex;
+    flex-direction: column;
   }
 
   header div h1 {
