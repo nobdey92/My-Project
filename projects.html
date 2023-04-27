@@ -5,11 +5,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/projects.css" />
     <title>Projects</title>
 </head>
+<header>
+    <div id="wholeHeader">
+        <img src="assets/img/esportslogo.png" alt="My streamer logo" class="logo" />
+        <div>
+            <h1>Jordan Hobdey-Nobdey<sup>92</sup></h1>
+        </div>
+        <div class="dropDown">
+            <button onclick="buttonDropDown()" class="buttonDrop">Menu</button>
+            <div id="menuDropdown" class="dropMenuItems">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="links.html">Links</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<div>
+    <h2>JavaScript - Try, Catch including Finally</h2>
 
-<body>
+    <p>Please input a number between 50 and 100:</p>
 
+    <input id="demoOne" type="text" placeholder="Input text here">
+    <button id="tryCatchFinButton" type="button" onclick="checkNumber()">Test Input</button>
+
+    <p id="pDemoOne"></p>
+</div>
+
+<div class="box">
+    <h2>Random Password Generator</h2>
+    <input type="text" name="" placeholder="Create password" id="password" readonly>
+</div>
+
+<script src="./assets/js/menuButtonScript.js"></script>
+<script src="./assets/js/projects.js"></script>
 </body>
 
 </html>

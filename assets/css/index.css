@@ -45,8 +45,8 @@ header {
 }
 
 .logo {
-  width: 100%;
-  height: auto;
+  max-width: 200px;
+  max-height: 200px;
 }
 
 header div h1 {
@@ -64,11 +64,12 @@ header div h1 {
 .buttonDrop {
   background-color: var(--bgColor);
   color: var(--onBgColor);
-  padding: var(--sizeSm);
+  padding: var(--sizeXs);
+  border: var(--sizeXs);
   font-size: var(--sizeSm);
-  border: var(--sizeSm);
-  cursor: pointer;
   border-radius: var(--sizeXs);
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 /* Dropdown button on hover & focus */
@@ -89,14 +90,13 @@ header div h1 {
   position: absolute;
   background-color: var(--bgColor);
   min-width: var(--sizeXs);
-  z-index: 1;
   border-radius: var(--sizeXs);
 }
 
 /* Links inside the dropdown */
 .dropMenuItems a {
   color: var(--onBgColor);
-  padding: var(--sizeSm);
+  padding: var(--sizeXs);
   text-decoration: underline;
   display: block;
 }
@@ -193,7 +193,7 @@ footer nav ul li a:hover {
   }
 
   header {
-    min-width: 100px;
+    min-width: 200px;
   }
 
   header ul {
