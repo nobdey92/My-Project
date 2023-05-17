@@ -16,17 +16,22 @@ function checkNumber() {
   }
 }
 
-function genPassword(length = 12) {
-  let password = "";
-  const chars =
+const password = document.getElementById("password");
+
+function genPassword() {
+  let chars =
     "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  let passwordLength = length;
-
-  const array = new Uint32Array(length);
-  window.crypto.getRandomValues(array);
-
-  for (i = 0; i < length; i++) {
-    password += chars[array[i] % chars.length];
+  let passwordLength = 12;
+  let password = "";
+  for (let i = 0; i <= passwordLength; i++) {
+    let randomNumber = Math.floor(Math.random() * chars.length);
+    password += chars.substring(randomNumber, randomNumber + 1);
   }
-  return password;
+  document.getElementById("password").value = password;
+}
+
+function copyPassword() {
+  let copyText = document.getElementById("password");
+  copyText.select();
+  document.execCommand("copy");
 }
