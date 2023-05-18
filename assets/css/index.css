@@ -143,6 +143,13 @@ p {
   padding-bottom: var(--sizeXs);
 }
 
+.logo {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+}
+
 /* Footer */
 
 footer {
